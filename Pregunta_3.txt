@@ -31,3 +31,8 @@ Canales ADC (Cant) 		        8 canales
 Periféricos UART (Cant) 	   	1 UART
 
 
+#define SYS_BASE 0x6000000
+#define GPIO_AHB (SYS_BASE + 0x6000000)
+#define GPIO_AHB_OUT (GPIO_AHB + 0x504)
+
+volatile uint32_t* gpio_ahb_out = (uint32_t*)GPIO_AHB_OUT;
