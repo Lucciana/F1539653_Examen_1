@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int sumaDivisoresPropios(int n) {
+    int suma = 0;
+    for (int i = 1; i <= n/2; i++) {
+        if (n % i == 0) {
+            suma += i;
+        }
+    }
+    return suma;
+}
+
+int main() {
+    int arr[15];
+
+    // Inicializar 
+    srand(time(NULL));
+
+    // Llenar arreglo con números aleatorios entre 1 y 100
+    for (int i = 0; i < 15; i++) {
+        arr[i] = rand() % 100 + 1;
+    }
+
+    // Imprimir arreglo generado
+    printf("El arreglo es:\n");
+    for (int i = 0; i < 15; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n\n");
+
+    // Clasificación
+    for (int i = 0; i < 15; i++) {
+        int n = arr[i];
+        int suma = sumaDivisoresPropios(n);
+
+        if (suma == n) {
+            printf("%d – Perfecto\n", n);
+        } else if (suma < n) {
+            printf("%d – Deficiente\n", n);
+        } else {
+            printf("%d – Abundante\n", n);
+        }
+    }
+
+    return 0;
+}
