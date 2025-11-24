@@ -1,0 +1,33 @@
+/ 	Microcontrolador
+Característica 	             SAMD21 
+Tipo de Core           	     ARM Cortex-M0+
+Memoria RAM 	               SRAM 32 KB
+Memoria FLASH 	             256 KB
+Memoria ROM 	               8 KB
+Puertos GPIO (Cant)        	 38 pines
+Canales ADC (Cant)           1 canal
+Periféricos UART (Cant) 	   6 UART
+
+
+/ 	Microcontrolador 
+Característica 	             ESP32 
+Tipo de Core                 Dual
+Memoria RAM 	               Wroom/ Wrover
+Memoria FLASH                4 MB
+Memoria ROM 	               448 KB
+Puertos GPIO (Cant) 	       34 pines
+Canales ADC (Cant) 		       18 canales
+Periféricos UART (Cant) 	   3 UART
+
+
+/ 	Microcontrolador	
+Característica 	 	            nRF52840 
+Tipo de Core 		              ARM Cortex-M4F
+Memoria RAM 		              SRAM 256 KB
+Memoria FLASH 		            1 MB
+Memoria ROM 		              256 KB
+Puertos GPIO (Cant) 		      48 pines
+Canales ADC (Cant) 		        8 canales
+Periféricos UART (Cant) 	   	1 UART
+
+
